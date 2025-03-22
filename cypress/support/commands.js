@@ -1,3 +1,5 @@
+import '@testing-library/cypress/add-commands'
+
 Cypress.Commands.add('login', (username, password) => {
   cy.visit('/admin');
   cy.get('[id="_username"]').type(username);
